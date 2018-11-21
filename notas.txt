@@ -1,0 +1,5 @@
+* W3C developer
+    - Para revisar el codigo
+
+* Mozilla developer 
+    - Revisar actualizaciones sobre las etiquetas
