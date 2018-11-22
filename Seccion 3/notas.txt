@@ -1,0 +1,2 @@
+* emmet
+    - Plugin para escribir etiquetas rapidamente
