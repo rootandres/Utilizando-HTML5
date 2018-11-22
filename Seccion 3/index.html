@@ -5,32 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <title>Outline HTML5</title>
+    <title>Microdatos</title>
     <link rel="icon" href="imagenes/favicon.jpg">
 </head>
 <body>
     
-    <h1>Estructura HTML5</h1>
-
-    <h2>Subtitulo 1</h2>
-    <h2>Subtitulo 2</h2>
-    <h2>Subtitulo 3</h2>
-
-    <h3>Subtitulo del subtitulo 3</h3>
-    <h3>Subtitulo del subtitulo 3</h3>
-    <h3>Subtitulo del subtitulo 3</h3>  
-
-    <section>
-        <h1>Estructura HTML5</h1>
-
-        <h2>Subtitulo 1</h2>
-        <h2>Subtitulo 2</h2>
-        <h2>Subtitulo 3</h2>
-
-        <h3>Subtitulo del subtitulo 3</h3>
-        <h3>Subtitulo del subtitulo 3</h3>
-        <h3>Subtitulo del subtitulo 3</h3> 
-    </section>
+    <article class="product" itemscope itemtype="https://schema.org/Product">
+        <h1 class="product-title" itemprop="name">Zapatilla de carrera</h1>
+        <img class="product-image" itemprop="image" src="zapatilla.jpg" alt="Zapatilla de carrera">
+        <div itemscope itemtype="http://schema.org/Offer">
+            <p class="product-price" itemprop="price">100</p>
+        </div>
+        <p class="product-size" itemprop="size" >40</p>
+        <p class="product-color" itemprop="color">negro</p>
+    </article>
 
 
 </body>
