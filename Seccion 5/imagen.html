@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Imagen</title>
+</head>
+<body>
+    <!--
+    <img src="Ruta de la imagen . extension" 
+         alt="Descripcion de la imagen"
+         width = "Ancho"
+         height = "Alto"
+    >
+    -->
+    
+    <img src="imagenes/alcon.jpeg" alt="Alcon"
+        width="500" height="300" 
+    >
+
+    <h1>SRCSET</h1>
+
+    <img srcset="imagenes/alcon.jpeg 2x
+                imagenes/favicon.jpg 1x"
+        
+        src = "imagenes/favicon.jpg"        
+        
+        alt="Figuras">
+
+    <h2>Picture</h2>
+
+    <picture>
+        <source srcset="imagenes/perrito.jpeg">
+        <img src="imagenes/perrito.jpeg" alt="Perrito">
+    </picture>
+
+    <h2>Figure</h2>
+    <p>
+        Cuando se quiere destacar un elemento entre muchos
+    </p>
+    <figure>
+        <img src="imagenes/favicon.jpg" alt="Icono">
+        <figcaption>Logo de la pagina web</figcaption>
+    </figure>
+
+</body>
+</html>
