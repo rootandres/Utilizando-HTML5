@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Select, option, optgroup</title>
+</head>
+<body>
+    
+    <h1>Select, option, optgroup</h1>
+
+    <fieldset>
+
+        <legend>Su direccion</legend>
+        <label >
+            Calle y numero
+            <input>
+        </label>
+
+        <br>
+
+        <label >
+            Su pais:
+            <input>
+        </label>
+
+        <br>
+
+        <select name="Genero" id="genero">
+            <option value="Other">Otro</option>
+            <option value="Masculino">Masculino</option>
+            <option value="Femenino">Femenino</option>
+        </select>
+
+        <br>
+
+        <select name="Paises" id="paises">
+            <option value="Peru">Peru</option>
+            <option value="Chile">Chile</option>
+            <option value="Brasil">Brasil</option>
+            <option value="Uruguay">Uruguay</option>
+        </select>
+
+        <!-- Con el atributo multiple -->
+
+        <select multiple name="Paises" id="paises">
+            <option value="Peru">Peru</option>
+            <option value="Chile">Chile</option>
+            <option value="Brasil">Brasil</option>
+            <option value="Uruguay">Uruguay</option>
+        </select>
+
+        <!-- Con el atributo optgroup -->
+
+        <select  name="Paises" id="paises">
+            <optgroup label="Sudamerica">
+                <option value="Peru">Peru</option>
+                <option value="Chile">Chile</option>
+                <option value="Brasil">Brasil</option>
+                <option value="Uruguay">Uruguay</option>
+            </optgroup>
+
+            <optgroup label="Europa">
+                <option value="España">España</option>
+                <option value="Protugal">Portugal</option>
+                <option value="Italia">Italia</option>
+            </optgroup>
+            
+        </select>
+
+        <br>
+
+        <textarea name="mensaje" id="mensaje" cols="30" rows="10">
+
+        </textarea>
+        
+        <br>
+
+        <!-- Limitando la cantidad de texto -->>
+        
+        <textarea name="mensaje" id="mensaje" cols="30" rows="10" maxlength="20">
+            
+        </textarea>
+        
+        <!--Data list que es similar al select-->>
+
+        <br>
+
+        <input list="pais">
+
+        <datalist ide="pais">
+            <option value="España"> 
+            <option value="Peru">Peru</option>
+        </datalist>
+
+    </fieldset>
+
+</body>
+</html>
