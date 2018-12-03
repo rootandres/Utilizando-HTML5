@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Atributos para formularios</title>
+</head>
+<body>
+
+    <h1>Atributos</h1>
+
+    <!-- Tipos Booleanos
+        required : ese campo es obligatorio llenarlo
+        disabled : hace que el campo este desactivado
+        checked : Que este seleccionado por defecto
+        multiple: permite que un campo reciba varios valores
+        autofocus : Donde el marcador quieres que inicie
+        readonly : elementos de solo lectura
+    -->
+
+    <form >
+
+        <label >
+            <input required >
+            <button>Enviar</button>
+        </label>
+
+        <br>
+
+        <label >
+            <input disabled>
+            <button>Enviar</button>
+        </label>
+
+        <br>
+
+        <label autofocus>
+            <input >
+            <button>Enviar</button>
+        </label>
+
+        <br>
+
+        <label >
+            <input readonly value="Solo lectura" >
+            <button>Enviar</button>
+        </label>
+
+    </form>
+
+    <!-- Otro atributos que no son booleans
+        
+        maxlength y minlength
+        min max : Para valores numericos
+        step : saltos en un atributo
+        tabindex 
+        autocomplete= on|off (formulario)
+    -->
+    
+    <form >
+
+        <label >
+            <input required tabindex="2">
+            <button>Enviar</button>
+        </label>
+
+        <br>
+
+        <label tabindex="1">
+            <input >
+            <button>Enviar</button>
+        </label>
+        
+        <br>
+
+        <label >
+            <input required tabindex="4" >
+            <button>Enviar</button>
+        </label>
+
+        <br>
+
+        <label tabindex="3">
+            <input >
+            <button>Enviar</button>
+        </label>
+
+
+    </form>
+
+
+</body>
+</html>
