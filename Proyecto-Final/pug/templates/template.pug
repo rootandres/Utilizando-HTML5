@@ -1,0 +1,31 @@
+block config
+    include ../config/config.pug
+
+doctype html
+html
+    head
+        title #{pageTitle} | #{siteTitle}
+        meta(charset="utf-8")
+        meta(name='description' content=description)
+        link(rel='stylesheet' href='https://raw.githubusercontent.com/escueladigital/EDgrid/master/src/css/ed-grid.min.css')
+
+        link(rel='stylesheet' href='/css/styles.css')
+    body
+        header.main-header
+            a(href='/')
+                img(src='/img/logo.png').logo
+            nav.menu
+                include ../blocks/menu.pug
+        div
+            block banner
+                img(src='/img/'+currentPage+'.jpg')
+        
+        main
+            block main
+
+        aside
+            block aside
+
+        footer
+            block footer
+            include ../blocks/siguenos.pug
